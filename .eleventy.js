@@ -4,7 +4,7 @@ const { splitExt } = require("./utils.js");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 const config = {
-  templateFormats: ["html", "md", "njk"],
+  templateFormats: ["11ty.js", "html", "md", "njk"],
 
   // If your site lives in a different subdirectory, change this.
   pathPrefix: "/",

@@ -1,4 +1,5 @@
 {
   "layout": "post",
-  "permalink": "blog/{{ slug }}/index.html"
+  "permalink": "blog/{{ slug }}/index.html",
+  "author": "John Doe"
 }

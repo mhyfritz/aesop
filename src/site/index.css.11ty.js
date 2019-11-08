@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const postcss = require("postcss");
-const config = require("./postcss.config");
+const config = require("../../postcss.config");
 
 const fileName = "index.css";
 

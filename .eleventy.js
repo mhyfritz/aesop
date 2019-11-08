@@ -36,8 +36,8 @@ module.exports = eleventyConfig => {
 
   /*
     Static assets
-    By convention, all subdirectories under `public` are copied into the site root,
-    e.g. `public/css` gets copied to `/css`
+    By convention, everythinh under `public` is copied into the site root,
+    e.g. `public/img/` gets copied to `/img/`, `public/favicon.ico` to `/favicon.ico` etc.
   */
   const assetsRoot = path.join(config.dir.input, "public");
   const assetDirs = fs.readdirSync(assetsRoot);

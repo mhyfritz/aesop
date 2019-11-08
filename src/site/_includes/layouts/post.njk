@@ -2,6 +2,15 @@
 layout: base
 ---
 
-<article>
+<article class="post mx-auto">
+  <h2 class="font-sans text-5xl text-center text-gray-900 my-4">
+    {{ title }}
+  </h2>
+  <div class="font-sans text-center text-gray-500 mb-4">
+    <div>Written by {{ author }}</div>
+    <div>on November 6th, 2019</div>
+  </div>
+  <section class="markdown font-serif">
     {{ content | safe }}
+  </section>
 </article>

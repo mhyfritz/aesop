@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const filters = require("./src/utils/filters");
 
 const config = {
   templateFormats: ["11ty.js", "html", "md", "njk"],
@@ -20,6 +21,10 @@ const config = {
 
 module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  for (const filter in filters) {
+    eleventyConfig.addFilter(filter, filters[filter]);
+  }
 
   // Static assets: copy everything under `public` into the site root
   const assetsRoot = path.join(config.dir.input, "public");

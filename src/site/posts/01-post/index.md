@@ -1,6 +1,7 @@
 ---
 slug: my-first-post
 title: My first post
+date: 2019-11-10
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et libero a turpis semper iaculis ut at felis. Duis vitae felis varius, pretium lacus ut, mattis dui. Fusce luctus dolor vel ante congue, et molestie velit sagittis. Aenean blandit hendrerit pulvinar. Maecenas in nulla eu ligula aliquet laoreet eget quis felis. Proin at suscipit quam, sit amet dignissim tellus. Vestibulum semper vehicula nulla, sed pellentesque ex vulputate sit amet. Etiam sed dapibus leo, ac consectetur eros.

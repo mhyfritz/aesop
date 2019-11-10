@@ -8,7 +8,7 @@ layout: base
   </h2>
   <div class="font-sans text-center text-gray-500 mb-4">
     <div>Written by {{ author }}</div>
-    <div>on November 6th, 2019</div>
+    <div>{{ date | prettyDate('MMMM dd, yyyy') }}</div>
   </div>
   <section class="markdown font-serif">
     {{ content | safe }}

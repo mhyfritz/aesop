@@ -1,4 +1,3 @@
-const fs = require("fs");
 const path = require("path");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const filters = require("./src/utils/filters");

@@ -1,6 +1,6 @@
 const path = require("path");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const filters = require("./src/utils/filters");
+const { filters } = require("./src/utils");
 
 const config = {
   templateFormats: ["11ty.js", "html", "md", "njk"],

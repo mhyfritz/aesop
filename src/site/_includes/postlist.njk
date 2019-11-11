@@ -1,0 +1,16 @@
+<ol class="postlist" reversed start="{{ postlist.length }}">
+  {% for post in postlist | reverse %}
+  <li class="py-4 px-6">
+    <a href="{{ post.url | url }}" rel="bookmark">
+      <h2 class="font-sans text-4xl text-gray-900 my-3">
+        {{ post.data.title }}
+      </h2>
+      <div class="font-sans text-gray-500 text-base">
+        {{ post.data.date | prettyDate('MMMM dd, yyyy') }} by
+        {{ post.data.author }}
+      </div>
+      <p class="font-serif">{{ post.data.summary }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ol>

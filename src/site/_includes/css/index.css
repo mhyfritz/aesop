@@ -8,4 +8,8 @@
 
 @import "./main.css";
 
+@import "./blog.css";
+
+@import "./postlist.css";
+
 @import "./post.css";

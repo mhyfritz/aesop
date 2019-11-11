@@ -1,0 +1,11 @@
+.blog {
+  --max-width: 50rem;
+  --padding-x: 2.5rem;
+}
+
+.blog {
+  max-width: var(--max-width);
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+  @apply mx-auto;
+}

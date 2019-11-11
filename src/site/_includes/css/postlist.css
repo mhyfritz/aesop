@@ -1,0 +1,29 @@
+.postlist {
+  li:not(:last-of-type) {
+    @apply mb-4;
+    @apply border-b;
+    @apply border-gray-300;
+  }
+
+  h2:after {
+    content: "";
+    display: block;
+    height: 0.25rem;
+    width: 40px;
+    margin-top: 0.5rem;
+    background-color: currentColor;
+    transition: width 150ms ease-out;
+  }
+
+  li:hover h2:after {
+    width: 100px;
+  }
+
+  h2 {
+    transition: transform 150ms ease-out;
+  }
+
+  li:hover h2 {
+    transform: translateX(20px);
+  }
+}

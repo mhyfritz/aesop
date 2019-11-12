@@ -12,10 +12,12 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    {% include "header.njk" %}
-    <main class="pt-24">
-      {{ content | safe }}
-    </main>
-    {% include "footer.njk" %}
+    <div class="page">
+      {% include "header.njk" %}
+      <main class="pt-24">
+        {{ content | safe }}
+      </main>
+      {% include "footer.njk" %}
+    </div>
   </body>
 </html>

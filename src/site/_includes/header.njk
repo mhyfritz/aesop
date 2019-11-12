@@ -1,5 +1,8 @@
 <header
-  class="flex bg-white border-b border-gray-300 fixed top-0 inset-x-0 z-30 h-16"
+  class="flex items-center bg-white border-b border-gray-300 fixed top-0 inset-x-0 z-30 h-16 px-6"
 >
-  header
+  <div class="flex w-full max-w-6xl mx-auto">
+    <a class="flex-1" href="{{ '/' | url }}">Home</a>
+    <a href="{{ '/blog' | url }}">Blog</a>
+  </div>
 </header>

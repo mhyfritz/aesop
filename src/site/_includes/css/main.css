@@ -9,7 +9,7 @@
 .theme-dark {
   --color-text-default: #f7fafc;
   --color-text-accent: #fff;
-  --color-text-soft: #a0aec0;
+  --color-text-soft: #637777; /* night owl's comment color*/
 
   --color-bg-default: #011627;
 }

@@ -4,7 +4,9 @@ title: Posts
 ---
 
 <div class="blog">
-  <h1 class="text-center text-6xl font-serif font-light">{{ title }}</h1>
+  <h1 class="text-default text-center text-6xl font-serif font-light">
+    {{ title }}
+  </h1>
   <div>
     {%- set postlist = collections.posts -%} {% include "postlist.njk" %}
   </div>

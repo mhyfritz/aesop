@@ -1,3 +1,19 @@
+:root {
+  --color-text-default: #2d3748;
+  --color-text-accent: #1a202c;
+  --color-text-soft: #a0aec0;
+
+  --color-bg-default: #fff;
+}
+
+.theme-dark {
+  --color-text-default: #f7fafc;
+  --color-text-accent: #fff;
+  --color-text-soft: #a0aec0;
+
+  --color-bg-default: #011627;
+}
+
 html {
   font-size: 14px;
 
@@ -15,10 +31,10 @@ body {
   overflow-y: scroll;
 }
 
-::selection {
+/* ::selection {
   @apply bg-pink-500;
   @apply text-white;
-}
+} */
 
 .page {
   min-height: 100vh;

@@ -12,12 +12,18 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    <div class="page">
+    <div class="page bg-default">
       {% include "header.njk" %}
       <main class="pt-24">
         {{ content | safe }}
       </main>
       {% include "footer.njk" %}
     </div>
+
+    {% set js %}
+      {% include "js/darkmode.js" %}
+    {% endset %}
+    <script>{{ js | safe }}</script>
+    
   </body>
 </html>

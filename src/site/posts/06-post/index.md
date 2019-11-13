@@ -1,7 +1,7 @@
 ---
 title: ...and a sixth one!
 slug: and-a-sixth-one
-date: 2019-11-10
+date: 2019-11-15
 summary: Hornswaggle measured fer yer chains chase run a shot across the bow
   Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in
   the hole keel rum Barbary Coast...

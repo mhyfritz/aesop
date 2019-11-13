@@ -1,8 +1,30 @@
 <header
-  class="flex items-center bg-white border-b border-gray-300 fixed top-0 inset-x-0 z-30 h-16 px-6"
+  class="flex items-center text-default bg-default border-b border-gray-300 fixed top-0 inset-x-0 z-30 h-16 px-6"
 >
   <div class="flex w-full max-w-6xl mx-auto">
     <a class="flex-1" href="{{ '/' | url }}">Home</a>
+    <button class="js-darkmode mr-2" title="Toggle theme (light/dark)">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 64 64"
+      >
+        <g stroke="var(--color-text-default)" stroke-miterlimit="10">
+          <circle
+            fill="var(--color-bg-default)"
+            stroke-width="6"
+            cx="32"
+            cy="32"
+            r="28.8"
+          />
+          <path
+            fill="var(--color-text-default)"
+            d="M33 3.1c15.961 0 28.9 12.476 28.9 27.867 0 15.39-12.939 27.866-28.9 27.866"
+          />
+        </g>
+      </svg>
+    </button>
     <a href="{{ '/blog' | url }}">Blog</a>
   </div>
 </header>

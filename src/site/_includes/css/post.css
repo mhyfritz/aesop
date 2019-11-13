@@ -23,7 +23,7 @@
   p {
     @apply text-2xl;
     @apply leading-relaxed;
-    @apply text-gray-800;
+    @apply text-default;
   }
 
   p + p {

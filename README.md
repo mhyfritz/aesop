@@ -1,4 +1,15 @@
-# aesop: another eleventy site boilerplate
+Currently, "just" a playground for me to try out the [Eleventy static site generator](https://www.11ty.io/).
 
-> [Eleventy](https://www.11ty.io/) starter project with a clean, minimalisitc theme
-> optimized for [fabulists and storytellers](https://en.wikipedia.org/wiki/Aesop).
+Wishlist:
+
+- [x] postcss
+- [ ] rollup
+  - [ ] babel
+  - [ ] uglify
+- [x] tailwindcss
+  - [x] including a dark mode / theme
+- [ ] blog
+  - [x] basic setup: post collection, list & post pages
+  - [x] storyteller theme: clean & minimal with sane typography settings
+  - [ ] pagination
+  - [ ] tags

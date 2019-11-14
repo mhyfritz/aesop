@@ -3,13 +3,14 @@ const path = require("path");
 const postcss = require("postcss");
 const config = require("../../postcss.config");
 
-const fileName = "index.css";
+const inputFileName = "index.css";
+const outputFileName = "bundle.css";
 
 module.exports = class {
   data() {
-    const filePath = path.join(__dirname, "_includes", "css", fileName);
+    const filePath = path.join(__dirname, "_includes", "css", inputFileName);
     const css = fs.readFileSync(filePath);
-    const permalink = path.join("css", fileName);
+    const permalink = path.join("css", outputFileName);
 
     return { css, filePath, permalink };
   }

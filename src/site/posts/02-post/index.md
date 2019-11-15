@@ -1,6 +1,7 @@
 ---
 title: My second post
 slug: my-second-post
+tags: ["general"]
 date: 2019-11-11
 summary: Hornswaggle measured fer yer chains chase run a shot across the bow
   Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in

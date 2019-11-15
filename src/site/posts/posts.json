@@ -1,6 +1,5 @@
 {
   "layout": "post",
-  "tags": ["posts"],
   "permalink": "blog/{{ slug }}/index.html",
   "author": "John Doe"
 }

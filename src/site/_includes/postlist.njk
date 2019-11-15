@@ -9,6 +9,13 @@
         {{ post.data.date | prettyDate('MMMM dd, yyyy') }} by
         {{ post.data.author }}
       </div>
+      {% if post.data.tags %}
+      <div class="text-soft py-2">
+        {% for tag in post.data.tags %}
+        <span class="border border-soft rounded py-1 px-2">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
       <p class="font-serif pt-1 text-default text-xl leading-relaxed">
         {{ post.data.summary }}
       </p>

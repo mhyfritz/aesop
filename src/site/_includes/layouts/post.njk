@@ -9,6 +9,13 @@ layout: base
   <div class="font-sans text-center text-soft mb-4">
     <div>Written by {{ author }}</div>
     <div>{{ date | prettyDate('MMMM dd, yyyy') }}</div>
+    {% if tags %}
+    <div class="text-default pt-3">
+      {% for tag in tags %}
+      <span class="border rounded py-1 px-2">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
   <section class="markdown font-serif">
     {{ content | safe }}

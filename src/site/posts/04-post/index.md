@@ -1,6 +1,7 @@
 ---
 title: My 4th post
 slug: my-fourth-post
+tags: ["science", "personal"]
 date: 2019-11-13
 summary: Hornswaggle measured fer yer chains chase run a shot across the bow
   Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in

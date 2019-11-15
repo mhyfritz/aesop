@@ -1,6 +1,7 @@
 ---
 title: My fifth post
 slug: my-fifth-post
+tags: ["python", "data-science"]
 date: 2019-11-14
 summary: Hornswaggle measured fer yer chains chase run a shot across the bow
   Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in

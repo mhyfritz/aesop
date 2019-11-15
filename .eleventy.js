@@ -21,9 +21,15 @@ const config = {
 module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // Filters
   for (const filter in filters) {
     eleventyConfig.addFilter(filter, filters[filter]);
   }
+
+  // Collections
+  eleventyConfig.addCollection("posts", collection =>
+    collection.getAllSorted().filter(item => /\/posts\//.test(item.inputPath))
+  );
 
   // Static assets: copy everything under `public` into the site root
   const assetsRoot = path.join(config.dir.input, "public");

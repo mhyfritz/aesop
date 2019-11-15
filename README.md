@@ -5,7 +5,7 @@ Wishlist:
 - [x] postcss
 - [ ] rollup
   - [ ] babel
-  - [ ] uglify
+  - [ ] minification
 - [x] tailwindcss
   - [x] including a dark mode / theme
 - [ ] blog

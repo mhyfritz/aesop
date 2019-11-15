@@ -10,9 +10,9 @@ layout: base
     <div>Written by {{ author }}</div>
     <div>{{ date | prettyDate('MMMM dd, yyyy') }}</div>
     {% if tags %}
-    <div class="text-default pt-3">
+    <div class="text-soft pt-3 leading-loose">
       {% for tag in tags %}
-      <span class="border rounded py-1 px-2">{{ tag }}</span>
+      <span class="border border-soft rounded py-1 px-2">{{ tag }}</span>
       {% endfor %}
     </div>
     {% endif %}

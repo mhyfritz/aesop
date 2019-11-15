@@ -1,7 +1,7 @@
 ---
 title: My first post
 slug: my-first-post
-tags: ["javascript", "tech"]
+tags: ["javascript", "tech", "foobar", "baz", "qux"]
 date: 2019-11-10
 summary: Hornswaggle measured fer yer chains chase run a shot across the bow
   Chain Shot flogging Pirate Round galleon rope’s end aft. Prow fire in

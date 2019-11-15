@@ -19,11 +19,6 @@
       </main>
       {% include "footer.njk" %}
     </div>
-
-    {% set js %}
-      {% include "js/darkmode.js" %}
-    {% endset %}
-    <script>{{ js | safe }}</script>
-    
+    <script src="{{ '/js/bundle.min.js' | url }}"></script>
   </body>
 </html>

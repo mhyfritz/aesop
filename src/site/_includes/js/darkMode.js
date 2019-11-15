@@ -1,5 +1,4 @@
-/* theme / darkmode support */
-(() => {
+export default () => {
   const className = "theme-dark";
   const targetElement = document.documentElement;
   const storageKey = "darkMode";
@@ -20,4 +19,4 @@
       JSON.stringify(targetElement.classList.contains(className))
     );
   };
-})();
+};

@@ -3,7 +3,6 @@ const babel = require("rollup-plugin-babel");
 
 module.exports = {
   output: {
-    file: "bundle.min.js",
     format: "iife"
   },
   plugins: [

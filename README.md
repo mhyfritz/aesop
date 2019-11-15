@@ -10,6 +10,6 @@ Wishlist:
   - [x] including a dark mode / theme
 - [ ] blog
   - [x] basic setup: post collection, list & post pages
-  - [x] storyteller theme: clean & minimal with sane typography settings
+  - [x] clean, minimal theme with pretty typography
   - [ ] pagination
   - [ ] tags

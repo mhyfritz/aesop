@@ -3,21 +3,19 @@ const path = require("path");
 const postcss = require("postcss");
 const config = require("../../postcss.config");
 
-const inputFileName = "index.css";
-const outputFileName = "bundle.css";
+const entry = path.join(__dirname, "_includes", "css", "index.css");
 
 module.exports = class {
   data() {
-    const filePath = path.join(__dirname, "_includes", "css", inputFileName);
-    const css = fs.readFileSync(filePath);
-    const permalink = path.join("css", outputFileName);
+    const css = fs.readFileSync(entry);
+    const permalink = path.join("css", "bundle.min.css");
 
-    return { css, filePath, permalink };
+    return { css, entry, permalink };
   }
 
-  async render({ css, filePath }) {
+  async render({ css, entry }) {
     return await postcss(config.plugins)
-      .process(css, { from: filePath })
+      .process(css, { from: entry })
       .then(result => result.css);
   }
 };

@@ -17,9 +17,8 @@ async function build() {
 
 module.exports = class {
   data() {
-    const entry = path.join(__dirname, "_includes", "js", "index.js");
     const permalink = path.join("js", "bundle.min.js");
-    return { entry, permalink };
+    return { permalink };
   }
 
   render() {

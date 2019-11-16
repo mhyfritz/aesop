@@ -1,25 +1,25 @@
 <ol class="postlist" reversed start="{{ postlist.length }}">
   {% for post in postlist | reverse %}
-  <li class="py-6 px-8">
-    <a href="{{ post.url | url }}">
-      <h2 class="font-sans text-4xl text-accent my-3">
-        {{ post.data.title }}
-      </h2>
-      <div class="font-sans text-soft text-base">
-        {{ post.data.date | prettyDate('MMMM dd, yyyy') }} by
+    <li class="py-6 px-8">
+      <a href="{{ post.url | url }}">
+        <h2 class="font-sans text-4xl text-accent my-3">
+          {{ post.data.title }}
+        </h2>
+        <div class="font-sans text-soft text-base">
+          {{ post.data.date | prettyDate('MMMM dd, yyyy') }} by
         {{ post.data.author }}
-      </div>
-      {% if post.data.tags %}
-      <div class="text-soft py-2 leading-loose">
-        {% for tag in post.data.tags %}
-        <span class="border border-soft rounded py-1 px-2">{{ tag }}</span>
-        {% endfor %}
-      </div>
-      {% endif %}
-      <p class="font-serif pt-1 text-default text-xl leading-relaxed">
-        {{ post.data.summary }}
-      </p>
-    </a>
-  </li>
+        </div>
+        {% if post.data.tags %}
+          <div class="text-soft py-2 leading-loose">
+            {% for tag in post.data.tags %}
+              <span class="border border-soft rounded py-1 px-2">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+        <p class="font-serif pt-1 text-default text-xl leading-relaxed">
+          {{ post.data.summary }}
+        </p>
+      </a>
+    </li>
   {% endfor %}
 </ol>

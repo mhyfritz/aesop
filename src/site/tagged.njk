@@ -1,0 +1,22 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - posts
+  addAllPagesToCollections: true
+layout: base
+permalink: /tags/{{ tag }}/
+---
+
+<div class="blog">
+  <h1 class="text-default text-5xl text-center font-light font-serif">
+    Tagged `{{ tag }}`
+  </h1>
+  <div>
+    {%- set postlist = collections[tag] -%}
+    {% include "postlist.njk" %}
+  </div>
+</div>s

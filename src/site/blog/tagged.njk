@@ -6,17 +6,21 @@ pagination:
   filter:
     - all
     - posts
+    - tags
   addAllPagesToCollections: true
 layout: base
-permalink: /tags/{{ tag }}/
+permalink: /blog/tags/{{ tag }}/
 ---
 
 <div class="blog">
   <h1 class="text-default text-5xl text-center font-light font-serif">
     Tagged `{{ tag }}`
   </h1>
+  <div class="text-default font-sans text-center my-2 ">
+    <a href="{{ '/blog/tags/' | url }}">View all tags</a>
+  </div>
   <div>
     {%- set postlist = collections[tag] -%}
     {% include "postlist.njk" %}
   </div>
-</div>s
+</div>

@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<div class="blog">
+    <h1 class="text-default text-center text-6xl font-serif font-light">
+    Tags
+  </h1>
+    <ul class="font-serif text-default pt-8 text-3xl">
+        {% for tag in collections.tags %}
+            {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
+            <li>
+                <a class="block" href="{{ tagUrl | url }}">{{ tag }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

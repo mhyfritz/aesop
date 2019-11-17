@@ -5,8 +5,8 @@ Wishlist:
 - [x] css processing and bundling via postcss
 - [x] js processing and bundling via rollup
 - [x] tailwindcss
-  - [x] including a dark mode / theme
+  - [x] including dark mode / theme
 - [ ] blog
   - [x] basic setup: post collection, list & post pages
   - [ ] pagination
-  - [ ] tags
+  - [x] tags

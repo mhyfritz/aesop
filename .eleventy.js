@@ -31,6 +31,15 @@ module.exports = eleventyConfig => {
     collection.getAllSorted().filter(item => /\/posts\//.test(item.inputPath))
   );
 
+  const tagsExclude = new Set(["all", "posts"]);
+  eleventyConfig.addCollection("tags", collection => {
+    const tags = collection
+      .getAll()
+      .flatMap(item => item.data.tags)
+      .filter(item => item !== undefined);
+    return [...new Set(tags)].sort();
+  });
+
   // Static assets: copy everything under `public` into the site root
   const assetsRoot = path.join(config.dir.input, "public");
   eleventyConfig.addPassthroughCopy({ [assetsRoot]: "/" });

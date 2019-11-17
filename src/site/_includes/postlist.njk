@@ -12,8 +12,8 @@
         {% if post.data.tags %}
           <div class="text-soft py-2 leading-loose">
             {% for tag in post.data.tags %}
-              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-              <a href="{{ tagUrl | url }}" class="border border-soft rounded py-1 px-2">{{ tag }}</a>
+              {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
+              <span class="border border-soft rounded py-1 px-2">{{ tag }}</span>
             {% endfor %}
           </div>
         {% endif %}

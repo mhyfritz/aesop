@@ -16,6 +16,11 @@ Morbi mauris magna, dignissim ac aliquet nec, commodo et nunc. Praesent porttito
 const { version } = require("package.json");
 // Provide some feedback
 console.log(`You are running v${version}.`);
+
+// test support for font ligatures
+if (x === y || y >= z) {
+  // do something
+}
 ```
 
 Proin aliquet, metus a bibendum iaculis, elit magna pellentesque nibh, vitae vulputate nulla felis vel elit. Vivamus pellentesque justo id varius aliquet. Curabitur ac fringilla tortor. Quisque elementum massa ex, ac porta tortor efficitur ac. Praesent nec libero dolor. Maecenas lacinia porttitor eros, eget pulvinar urna tempus quis. Integer arcu lorem, lacinia et nunc blandit, cursus volutpat leo. Vestibulum metus nibh, euismod ac augue eget, iaculis vestibulum neque. Nam consectetur imperdiet velit. Vestibulum pellentesque odio ac ex malesuada, a blandit felis ultricies. Nam sem sem, aliquam quis metus pharetra, vehicula congue nunc. Sed nec lectus viverra enim mattis convallis.

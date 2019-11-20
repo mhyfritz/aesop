@@ -8,7 +8,7 @@ export default () => {
     if (typeof isDarkMode !== "boolean") {
       isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
     }
-    targetElement.classList.toggle("theme-dark", isDarkMode);
+    targetElement.classList.toggle(className, isDarkMode);
   } catch {}
 
   const button = document.querySelector(".js-darkmode");

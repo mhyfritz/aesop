@@ -32,7 +32,7 @@
 
   code[class*="language-"],
   pre[class*="language-"] {
-    @apply font-mono;
+    @apply font-code;
   }
 
   pre[class*="language-"] {
@@ -43,11 +43,23 @@
     margin-right: calc(50% - 50vw);
   }
 
-  code[class*="language-"] {
+  code[class*="language-"],
+  .code-toolbar {
     max-width: var(--max-width);
     padding: 0 var(--padding-x);
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+
+  .code-toolbar {
+    @apply text-right;
+  }
+
+  .code-toolbar button {
+    @apply font-sans;
+    @apply text-soft;
+    @apply text-sm;
+    @apply underline;
   }
 }

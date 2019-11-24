@@ -1,8 +1,8 @@
 {
-  "name": "eleventy-starter",
+  "name": "aesop",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Another Eleventy site boilerplate",
   "scripts": {
     "build": "cross-env NODE_ENV=production npm-run-all clean build:*",
     "build:eleventy": "eleventy",

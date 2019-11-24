@@ -1,5 +1,5 @@
-<ol class="postlist" reversed start="{{ postlist.length }}">
-  {% for post in postlist | reverse %}
+<ul class="postlist">
+  {% for post in postlist %}
     <li class="py-6 px-8">
       <a href="{{ post.url | url }}">
         <h2 class="font-sans text-4xl text-accent my-3">
@@ -23,4 +23,4 @@
       </a>
     </li>
   {% endfor %}
-</ol>
+</ul>

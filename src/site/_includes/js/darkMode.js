@@ -2,6 +2,7 @@ export default () => {
   const className = "theme-dark";
   const targetElement = document.documentElement;
   const storageKey = "darkMode";
+  const buttonSelector = ".button-darkmode";
 
   try {
     let isDarkMode = JSON.parse(localStorage.getItem(storageKey));
@@ -11,9 +12,9 @@ export default () => {
     targetElement.classList.toggle(className, isDarkMode);
   } catch {}
 
-  const button = document.querySelector(".js-darkmode");
+  const button = document.querySelector(buttonSelector);
   button.onclick = () => {
-    targetElement.classList.toggle("theme-dark");
+    targetElement.classList.toggle(className);
     localStorage.setItem(
       storageKey,
       JSON.stringify(targetElement.classList.contains(className))

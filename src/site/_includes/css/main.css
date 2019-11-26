@@ -37,20 +37,30 @@ html {
 
 body {
   overflow-x: hidden;
-  overflow-y: scroll;
+}
+
+.welcome-text::after {
+  content: "|";
+  /* display: inline-block;
+  height: 2rem;
+  width: 0.5rem;
+  background-color: currentColor; */
+  animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* ::selection {
   @apply bg-pink-500;
   @apply text-white;
 } */
-
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.page > main {
-  flex: 1;
-}

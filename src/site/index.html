@@ -3,6 +3,13 @@ layout: base
 title: Homepage
 ---
 
-<div class="blog">
-  <h1 class="font-serif text-default text-5xl">Hello, Eleventy!</h1>
+<div class="h-full flex justify-center items-center">
+  <h1 class="welcome-text font-code text-default text-5xl"></h1>
 </div>
+
+<script>
+  const target = document.querySelector('.welcome-text')
+  document.addEventListener('DOMContentLoaded', function () {
+    type(target, 2000, 'Hello, World!', 1000, 'Hello, Eleventy!');
+  });
+</script>

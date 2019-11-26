@@ -13,12 +13,14 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    <div class="page bg-default">
+    <div class="h-screen flex flex-col bg-default">
       {% include "header.njk" %}
-      <main class="pt-24">
-        {{ content | safe }}
-      </main>
-      {% include "footer.njk" %}
+      <section class="flex-1 flex flex-col overflow-auto">
+        <main class="flex-1">
+          {{ content | safe }}
+        </main>
+        {% include "footer.njk" %}
+      </section>
     </div>
     <script src="{{ '/js/bundle.min.js' | url }}"></script>
   </body>

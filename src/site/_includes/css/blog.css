@@ -8,4 +8,5 @@
   padding-left: var(--padding-x);
   padding-right: var(--padding-x);
   @apply mx-auto;
+  @apply pt-10;
 }

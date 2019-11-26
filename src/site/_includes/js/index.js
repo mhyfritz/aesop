@@ -5,4 +5,4 @@ import initCodeLigatures from "./codeLigatures";
 initDarkMode();
 initCodeLigatures();
 
-window.type = type;
+window.typical = { type };

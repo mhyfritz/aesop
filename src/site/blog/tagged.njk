@@ -17,7 +17,9 @@ permalink: /blog/tags/{{ tag }}/
     Tagged `{{ tag }}`
   </h1>
   <div class="text-default font-sans text-center my-2 ">
-    <a href="{{ '/blog/tags/' | url }}">View all tags</a>
+    <a href="{{ '/blog/tags/' | url }}">
+      View all tags
+    </a>
   </div>
   <div>
     {%- set postlist = collections[tag] -%}

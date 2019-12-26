@@ -2,11 +2,10 @@ const path = require("path");
 const siteRoot = path.join(__dirname, "src", "site");
 
 const purgecss = require("@fullhuman/postcss-purgecss")({
+  // to optimize, list exact locations
   content: [
-    path.join(siteRoot, "*.html"),
-    path.join(siteRoot, "*.njk"),
-    path.join(siteRoot, "_includes", "**", "*.html"),
-    path.join(siteRoot, "_includes", "**", "*.njk")
+    path.join(siteRoot, "**", "*.html"),
+    path.join(siteRoot, "**", "*.njk")
   ],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
 });

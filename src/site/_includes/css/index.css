@@ -4,6 +4,8 @@
 
 @import "tailwindcss/utilities";
 
+/* purgecss start ignore */
+
 @import "./prism-theme-night-owl.css";
 
 @import "./main.css";
@@ -15,3 +17,5 @@
 @import "./post.css";
 
 @import "./header.css";
+
+/* purgecss end ignore */

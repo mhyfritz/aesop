@@ -10,7 +10,7 @@ layout: base
         {% for tag in collections.tags %}
             {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
             <li>
-                <a class="block" href="{{ tagUrl | url }}">{{ tag }}</a>
+                <a href="{{ tagUrl | url }}">{{ tag }}</a>
             </li>
         {% endfor %}
     </ul>

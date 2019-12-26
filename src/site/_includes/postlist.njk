@@ -13,7 +13,7 @@
           <div class="text-soft py-2 leading-loose">
             {% for tag in post.data.tags %}
               {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
-              <span class="font-code text-xs border border-soft rounded py-1 px-2">{{ tag }}</span>
+              <span class="tag">{{ tag }}</span>
             {% endfor %}
           </div>
         {% endif %}

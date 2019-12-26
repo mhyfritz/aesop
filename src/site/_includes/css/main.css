@@ -41,10 +41,6 @@ body {
 
 .welcome-text::after {
   content: "|";
-  /* display: inline-block;
-  height: 2rem;
-  width: 0.5rem;
-  background-color: currentColor; */
   animation: blinking 1s infinite;
 }
 
@@ -60,7 +56,11 @@ body {
   }
 }
 
-/* ::selection {
+.tag {
+  @apply font-code text-xs border border-soft rounded py-1 px-2;
+}
+
+::selection {
   @apply bg-pink-500;
   @apply text-white;
-} */
+}

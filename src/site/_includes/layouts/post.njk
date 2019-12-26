@@ -3,7 +3,7 @@ layout: base
 ---
 
 <article class="post">
-  <h2 class="post-title font-sans text-5xl text-center text-accent my-4">
+  <h2 class="post-title font-sans text-5xl text-center text-accent mb-4">
     {{ title }}
   </h2>
   <div class="font-sans text-center text-soft mb-4">
@@ -13,7 +13,7 @@ layout: base
       <div class="text-soft pt-3 leading-loose">
         {% for tag in tags %}
           {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" class="font-code text-xs border border-soft rounded py-1 px-2">{{ tag }}</a>
+          <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
         {% endfor %}
       </div>
     {% endif %}

@@ -19,20 +19,20 @@ pagination:
   <div class="my-8 text-default text-center">
     {% if pagination.previousPageHref %}
       <a href="{{ pagination.previousPageHref | url }}" title="View newer posts">
-        <i class="far fa-arrow-alt-circle-left fa-2x"></i>
+        <i class="fas fa-long-arrow-alt-left fa-2x"></i>
       </a>
     {% else %}
       <span class="text-soft">
-        <i class="far fa-arrow-alt-circle-left fa-2x"></i>
+        <i class="fas fa-long-arrow-alt-left fa-2x"></i>
       </span>
     {% endif %}
     {% if pagination.nextPageHref %}
       <a class="ml-4" href="{{ pagination.nextPageHref | url }}" title="View older posts">
-        <i class="far fa-arrow-alt-circle-right fa-2x"></i>
+        <i class="fas fa-long-arrow-alt-right fa-2x"></i>
       </a>
     {% else %}
       <span class="ml-4 text-soft" class="text-soft">
-        <i class="far fa-arrow-alt-circle-right fa-2x"></i>
+        <i class="fas fa-long-arrow-alt-right fa-2x"></i>
       </span>
     {% endif %}
   </div>
